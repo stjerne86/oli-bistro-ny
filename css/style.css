@@ -1,0 +1,954 @@
+/*OLI'S BISTRO*/
+
+p {
+    font-family: 'Flamenco', cursive;
+}
+
+
+
+.translogo { /* ændret ---------------*/
+    width: 5%;
+    position: absolute;
+    transform: translate(1500%, -110%);
+
+}
+
+#vin img{ /*Ny*/
+    width: 50%;
+   border:4px solid white;
+    border-radius:5px;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+#linda img{ /*Ny*/
+    width: 40%;
+    margin-left: 30%;
+      border:4px solid white;
+    border-radius:5px;
+    
+}
+
+#hancock img{ /*Ny*/
+    width: 50%;
+    margin-left: 30%;
+    border:4px solid white;
+    border-radius:5px;
+}
+
+
+
+
+/*NAV - Burgermenu*/
+
+ul {
+    list-style-type: none;
+}
+
+#main-header {
+    background: rgba(125, 162, 187, 0.6);
+    position: absolute;
+    width: 100%;
+    margin-top: 10px;
+    z-index: 1;
+}
+
+h1,
+.main-nav {
+    text-decoration: none;
+}
+
+#logo-burger {
+    margin-left: 85%
+}
+
+#logo {
+    font-size: 2em;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 10px;
+    z-index: 2;
+    display: block;
+}
+
+
+#logo a {
+    color: black;
+    text-decoration: none;
+
+}
+
+#main-nav a {
+    color: black;
+    font-family: 'Flamenco', cursive;
+    margin: 0.5em;
+}
+
+#logo-burger label {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+
+}
+
+#main-nav li a.engelsk {
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+#main-nav li a.fransk {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.hidden {
+    display: none;
+}
+
+#main-nav {
+    justify-content: center;
+    display: flex;
+    margin: 0;
+    /*dropbox går ud til kanten*/
+    padding: 0;
+    /*dropbox går ud til kanten*/
+}
+
+#main-nav a {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 3em;
+}
+
+#main-nav a:hover {
+    color: gainsboro;
+
+}
+
+#main {
+    /*      background: tan;
+     height: 70vh; */
+}
+
+/*FONT IMAGE*/
+
+img {
+    width: 100%;
+}
+
+
+
+body {
+    margin: 0;
+    font-family: 'Flamenco', cursive;
+    line-height: 1.3;
+}
+
+/*Menukort knap*/
+
+.button {
+    display: inline-block;
+    background-color: #4d0707;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    width: 110px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    color: white;
+    font-family: 'flamenco', cursive;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#menuknap {
+    position: relative;
+}
+
+#menuknap .button {
+    position: absolute;
+    top: 70%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
+}
+
+/*Main tekst*/
+
+.hyggen {
+    font-family: 'flamenco', cursive;
+}
+
+#forside-billede {
+    z-index: -1;
+}
+
+.velkommen {
+    background-color: rgba(252, 228, 194, 0.3);
+    padding: 10px;
+    text-align: center;
+}
+
+.kroelle img {
+    width: 100px;
+}
+
+h2 {
+    margin: 10px;
+    font-size: 25px;
+}
+
+.velkommen div {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.velkommen p {
+    font-family: 'Flamenco', cursive;
+    text-align: center;
+}
+
+/*Bistro tilbuds reklame*/
+
+.btilbud {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.tilbud {
+    background-color: rgba(252, 228, 194, 0.3);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/*slidshow--------------------*/
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+.yellow {
+    background-color: rgba(252, 228, 194, 0.3);
+    padding-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.yellow h3 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #777373;
+}
+
+/*Historien om Oli-bistro*/
+
+.historien {
+    background-color: rgba(252, 228, 194, 0.3);
+    padding-left: 10%;
+    padding-right: 10%;
+    
+
+}
+
+.historien div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.historien div img {
+    width: 30%;
+}
+
+.madmaleri {
+    background-color: rgba(252, 228, 194, 0.3);
+ text-align: center;
+    margin-bottom: 10px;
+    
+    margin-left: 10%
+    
+}
+
+
+
+
+.madmaleri img {
+    width: 80%;
+}
+
+/*Historien om Oli-bistro slut*/
+
+/*Kontakt Oli-Bistro*/
+
+p {
+    font-family: 'Flamenco', cursive;
+}
+
+.kontakt {
+    background-color: rgba(252, 228, 194, 0.3);
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  
+
+}
+
+.kontakt img {
+    width: 30%;
+
+}
+
+.kontakt div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Kontakt Oli-Bistro slut*/
+
+p {
+    font-family: 'Flamenco', cursive;
+}
+
+.kontakt {
+    background-color: rgba(252, 228, 194, 0.3);
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.kontakt div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bistro-map {
+    background-color: rgba(252, 228, 194, 0.3);
+    padding: 10px;
+    text-align: center;
+    
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: #777373;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding: 10px;
+    font-family: 'flamenco', cursive;
+}
+
+.info a {
+    color: black;
+    text-decoration: none;
+}
+
+.ben{
+    margin-top: 15px;
+}
+
+.info a:hover {
+    color: #7da2bb;
+}
+
+.social ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.social a {
+    margin: 3px;
+}
+
+.foot li a {
+    text-align: center;
+    justify-content: space-between;
+}
+
+.smiley {
+    width: 65px;
+}
+
+.foot li {
+    list-style: none;
+    display: inline-block;
+}
+
+.foot li a {
+    color: black;
+}
+
+.social a:hover {
+    color: #7da2bb;
+}
+
+
+
+/*Menukort------------------------------*/
+
+.menu2 p,
+h2,
+h3 {
+    font-family: 'Gaegu', cursive;
+   
+}
+
+.underline {
+    font-size: 40px;
+    text-align: center;
+
+}
+
+
+
+.menu2 p {
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.menu img {
+    width: 100%;
+}
+
+.menu2 {
+    color: #f4f4f0;
+}
+
+.menu2 h3 {
+    font-size: 25px;
+}
+
+.tid {
+    text-align: ;
+}
+
+.forsg {
+    background-image: url("../images/board.jpg");
+    background-size: cover;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+iframe {
+    width: 100%;
+}
+
+.videocontanier {
+    background-image: url(../images/elisha.jpg);
+    background-size: cover;
+    text-align: center;
+
+    
+        
+}
+
+.videocontanier iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*Mobile*/
+
+@media all and (max-width: 580px)
+/**** MEDIA QUERIES ****/
+
+    {
+
+    #logo-burger label {
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+    }
+
+    #toggle:checked + #main-nav {
+        display: block;
+
+    }
+
+    #main-nav {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        display: none;
+        width: 100%;
+
+    }
+
+    #main-nav li {
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        /*streger i drop down*/
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        /*streger i drop down*/
+        background-color: rgba(125, 162, 187, 0.9);
+        margin-right: 10%;
+        width: 100%;
+
+    }
+
+    #main-nav li:last-of-type {
+        border-bottom: none;
+    }
+
+    #main-nav a:hover {
+        /*tekst i drop down*/
+        color: skyblue;
+        background-color: rgba(125, 162, 187, 0.7);
+    }
+
+    /* slut NAV - Burgermenu*/
+    .menugalleri {
+        display: none;
+    }
+    .translogo { /* ændret ---------------*/
+        width: 22%;
+        position: absolute;
+        transform: translate(175%, -110%);
+
+    }
+}
+
+
+/*Media Q for h1, da den ikke skal kunne ses når menuen ændre sig fra burger til almenlig samt logoet på din andre sider ser mærkelig ud hvis der ikke er denne media Q*/
+
+@media screen and (min-width: 581px) {
+    #logo {
+        display: none;
+    }
+    .translogo { /* ændret ---------------*/
+        width:22%;
+        position: absolute;
+        transform: translate(177%, -105%);
+    }
+
+}
+
+/*-------Tablet---------------------------------------------------------*/
+
+@media screen and (min-width: 768px) {
+    .main-nav {
+        list-style-type: none;
+    }
+    #main-header {
+        margin-top: 22px;
+    }
+
+    #logo-burger {
+        margin: 0;
+    }
+
+    #logo {
+        line-height: 1.25em;
+        margin-top: .2em;
+    }
+
+    #main-nav {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+
+    }
+
+    #main-nav a {
+        margin: 0 .5em;
+        font-size: 25px;
+    }
+
+    #menu li {
+        text-align: center;
+    }
+
+    #main-nav li a.engelsk {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    #main-nav li a.fransk {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    /*Menuknap på billed i stor*/
+    .button {
+        font-size: 23px;
+        padding: 15px;
+        width: 150px;
+    }
+    #menuknap .button {
+        position: absolute;
+        top: 73%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+    }
+
+    /*Velkommen*/
+    .kroelle {
+        width: 40%;
+    }
+    .velkommen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .velkommen p,
+    h2 {
+        width: 80%;
+    }
+
+    /*bistro tilbud*/
+    .btilbud {
+        width: 60%;
+    }
+
+    /*slideskow*/
+    .slideshow-container {
+        width: 70%;
+    }
+    /*Kontaktside----------------------*/
+    .kontaktinfo {
+        width: 70%;
+        background-color: rgba(252, 228, 194, 0.6);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*Historien om Oli-bistro-----------*/
+    .bistro-info {
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .
+    /*Menukort------------------------------*/
+    .menu2 img {
+        width: 50%;
+    }
+
+    /*menu*/
+    .menu2 p,
+    h2,
+    h3 {
+        font-family: 'Gaegu', cursive;
+        width: 60%;
+        margin: auto;
+
+    }
+
+    .underline to {
+        font-size: 100px;
+    }
+    .menu2 img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        width: 65%;
+
+    }
+    .translogo {
+        width: 20%;
+        position: absolute;
+        transform: translate(200%, -110%);
+
+    }
+    #vin img {
+        width: 40%;
+    }
+    .forsg img {
+        margin-top: 20px;
+    }
+
+    .elite img {
+        width: 90px;
+        margin-top: 10px;
+    }
+    .footer {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+    }
+
+    iframe {
+        width: 60%;
+    }
+
+}
+
+/*LAPTOP*/
+
+@media screen and (min-width: 1000px) {
+
+    .footer {
+        display: flex;
+        justify-content: center;
+    }
+    .footer div,
+    .elite,
+    .info {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    
+    .ben {
+        padding-top:5px;
+        padding-bottom: 5px;
+        
+    }
+    .forsg img {
+        margin-top: 0px;
+    }
+    .velkommen,
+    .tilbud,
+    .yellow {
+       margin-left: 10%;
+        margin-right: 10%; padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    
+  /*kontakt*/
+    
+    .kontakt{   /*NY*/
+          margin-right: 10%;
+        margin-left: 10%;
+    }
+    
+    
+    .bistro-map{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    
+    /*Menuknap på billed i stor*/
+    .button {
+        font-size: 26px;
+        padding: 20px;
+        width: 165px;
+    }
+    #menuknap .button {
+        position: absolute;
+        top: 65%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+    }
+
+    /*Historien om Oli-bistro-------------*/
+    .flexbox {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: space-between;
+    }
+
+    /*velkommen*/
+    .velkommen p,
+    h2 {
+        width: 65%;
+    }
+    .kroelle {
+        width: 30%;
+    }
+
+    .translogo {
+        width: 20%;
+        position: absolute;
+        transform: translate(200%, -110%);
+
+    }
+    /*Menukort------------------------------*/
+    #oliven {
+        width: 50%;
+    }
+    .menu2 {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .menu2 p,
+    h2,
+    h3 {
+        font-family: 'Gaegu', cursive;
+        width: 100%;
+    }
+    .menugalleri {
+        background-color: rgba(252, 228, 194, 0.3);
+    }
+    .forsg {
+        display: flex;
+    }
+    .wrap {
+        flex-flow: wrap;
+        transform: translate(20%);
+        z-index: 1;
+        
+    }
+    #linda {
+        width: 100%;
+        transform: translate(5%, 18%);
+    }
+
+    #hancock {
+        width: 50%;
+        transform: translate(20%, 20%);
+
+    }
+    .wrap1 {
+        flex-flow: wrap;
+        transform: translate(30%, 1%);
+        z-index: 1;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    #wrap2 {
+        flex-flow: wrap;
+        transform: translate(20%);
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    #fish {
+        width: 50%;
+        transform: translate(10%, 20%);
+    }
+    #wrap3 {
+        flex-flow: wrap;
+        transform: translate(10%);
+        margin-right: 0;
+        z-index: 1;
+    }
+
+    #vin {
+        width: 50%;
+        transform: translate(1%, 5%);
+        margin-right: 0px;
+    }
+    .forsg {
+        background-image: url("../images/board.jpg");
+        background-size: cover;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .videocontanier {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+
+
+
+

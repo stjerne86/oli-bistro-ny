@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="description" content="Welcome! Oli Bistro is a French Cafe and Bistro in Mejlgade, Aarhus. Cheap and good food with fresh produce. Service is good and you can experience a mix of Danish and French food. We have wine taken from France which is cheap and the selection is great. We have mussels, fish and chips, Steak fries, French fries, French fries and steak, beef cow and much more. We have good deals, such as for example 3 dishes for 100 kroner in the evening and at breakfast.">
+    <!--husk at udfylde beskrivelse til SEO-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oli Bistro - English</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+</head>
+
+<body>
+     <!--BURGER MENU-->
+    <h1 id="logo"><a href="index.html">Oli-Bistro</a></h1>
+    <header id="main-header">
+
+        <section id="logo-burger">
+            <label for="toggle">&#9776;</label>
+        </section>
+
+        <input type="checkbox" id="toggle" class="hidden">
+        <!-- This has to be outside of #logo-burger to work. #main-nav cannot be selected when this is in a container -->
+        <ul id="main-nav">
+            <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+            <li><a href="menukort.html">Menu&nbsp;</a></li>
+            <li><a href="ombistro.html">About&nbsp;Oli&nbsp;Bistro</a></li>
+
+            <li><a href="kontakt.html">&nbsp;Contact</a>
+            </li>
+            <li><a href="#" class="engelsk">English</a></li>
+
+            <li><a href="#" class="fransk">French</a></li>
+
+        </ul>
+        <!--SLUT BURGER MENU-->
+
+    </header>
+<div id="menuknap">
+    <picture>
+        <source media="(min-width: 1000px)" srcset="images/baggrund-ny.jpg">
+        <img src="images/baggrund-ny.jpg" alt="Forside billed">
+    </picture>
+    <a href="menukort.html"><div class="button" style="vertical-align:middle"><span>Menu</span></div></a>
+</div>
+
+    <div class="velkommen">
+        <div class="kroelle">
+            <img src="images/kroelle-venstre.svg" alt="Krølle til Venstre">
+            <h2>Welcome</h2>
+            <img src="images/kroelle-hojre.svg" alt="Krølle til Højre">
+        </div>
+        <p>In the heart of Aarhus lies the cultural street Mejlgade, where Oli Bistro is located. A French and authentic bistro. The food is simple and customized to the wishes of the customers - sometimes inspired by other kitchens. <br> Our mission is to create a welcoming and welcoming bistro where you can expect a rather informal and cozy atmosphere and where the quality is high and the price is low.
+        </p>
+
+    </div>
+    <div class="tilbud">
+        <img class="btilbud" src="images/poster-ny.jpg" alt="Bistro Tilbud">
+    </div>
+    <div class="yellow">
+      <h3>Check out the bistro and feel cozy!</h3>
+    <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="images/oli-ny.jpg" alt="Ejer af Oli Bistro" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="images/udenfor-bistro.jpg" alt="Udenfor Bistroen" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="images/indenfor-doer.jpg" alt="Indenfor i Bistroen" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="images/indenfor-overview.jpg" alt="Et Overview af Bistroen" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="images/indenfor-stole-bord.jpg" alt="Stole og Border" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    </div>
+    <!--Javascript - Til slideshow-->
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        /*hvis denne function fjernes kan man ikke trykke videre til næste billed - pillene*/
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        /*hvis denne function fjernes kan man ikke trykke videre til næste billed - prikkerne*/
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        /*gør at hele slideshowet fungere - gør at elementerne gør som de gør, kan først se næste billed når der trykkes videre*/
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <footer class="footer">
+        <p class="info">Oli Bistro <br> Mejlgade 41 <br> 8000 Aarhus C <br>
+            <a href="tel://45-86-18-53-14">Tlf. 86 18 53 14</a><br></p>
+        <a href="http://www.findsmiley.dk/534821" target="_blank">
+            <picture class="elite">
+                <source media="(min-width: 769px)" srcset="images/elite-smiley.png">
+                <img class="smiley" src="images/elite-smiley.png" alt="Elite Smiley">
+            </picture>
+        </a>
+        <div class="social">
+            <ul class="foot">
+                <li class="face"><a href="https://www.facebook.com/pages/Oli-Bistro/781809155169359" target="_blank"><i class="fab fa-facebook-f fa-3x"></i></a></li>
+                <li class="insta"><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-3x"></i></a></li>
+                <li class="snap"><a href="https://goo.gl/maps/2FhADWAHzY92" target="_blank"><i class="fas fa-map-marker-alt fa-3x"></i></a></li>
+            </ul>
+        </div>
+        <div class="ben">
+            Åbningstider <br>
+            Alle ugens dage <br>
+            11:30 - 15:00 <br>
+            16:00 - 22:00
+        </div>
+    </footer>
+
+</body>
+</html>
